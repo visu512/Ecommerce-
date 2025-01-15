@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/homes_Fragment"
+        android:icon="@drawable/homebb"
+        android:title="@string/home" />
+
+
+    <item
+        android:id="@+id/cartsFragment"
+        android:icon="@drawable/trolley"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/saveFragment"
+        android:icon="@drawable/tag"
+        android:iconTint="@color/black"
+        android:title="Brand"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/profilesFragment"
+        android:icon="@drawable/userprofile"
+        android:title="Profile"
+        tools:ignore="HardcodedText" />
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".activity.CheckoutActivity">
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/border_design"
+    android:hint="Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/border_design"
+        android:fontFamily="@font/nunito"
+        android:hint="Village"
+        android:padding="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/border_design"
+        android:fontFamily="@font/nunito"
+        android:hint="City"
+        android:padding="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/border_design"
+        android:fontFamily="@font/nunito"
+        android:hint="State"
+        android:padding="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/border_design"
+        android:fontFamily="@font/nunito"
+        android:hint="Zip code"
+        android:padding="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/border_design"
+        android:fontFamily="@font/nunito"
+        android:hint="Phone"
+        android:padding="14dp" />
+
+
+    <!-- UPI Layout -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/black"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter UPI ID" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Card Details Layout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/black"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Card Number"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- CVV Layout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cvvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/black"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter CVV"
+            android:inputType="numberPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Confirm Order Button -->
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="Confirm Order"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

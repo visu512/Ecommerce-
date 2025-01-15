@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homes_Fragment">
+
+    <fragment
+        android:id="@+id/homes_Fragment"
+        android:name="com.example.ecomapp.fragment.HomeFragment"
+        android:label="fragment_homes_"
+        tools:layout="@layout/fragment_homes_" >
+
+        <action
+            android:id="@+id/action_homes_Fragment_to_cartsFragment"
+            app:destination="@id/cartsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartsFragment"
+        android:name="com.example.ecomapp.fragment.CartFragment"
+        android:label="fragment_carts"
+        tools:layout="@layout/fragment_carts" >
+
+        <action
+            android:id="@+id/action_cartsFragment_to_homes_Fragment"
+            app:destination="@id/homes_Fragment" />
+        <action
+            android:id="@+id/action_cartsFragment_to_profilesFragment"
+            app:destination="@id/profilesFragment" />
+        <action
+            android:id="@+id/action_cartsFragment_to_profilesFragment2"
+            app:destination="@id/profilesFragment" />
+        <action
+            android:id="@+id/action_cartsFragment_to_profilesFragment3"
+            app:destination="@id/profilesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilesFragment"
+        android:name="com.example.ecomapp.fragment.ProfileFragment"
+        android:label="fragment_profiles"
+        tools:layout="@layout/fragment_profiles" >
+
+        <action
+            android:id="@+id/action_profilesFragment_to_cartsFragment"
+            app:destination="@id/cartsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveFragment"
+        android:name="com.example.ecomapp.fragment.SearchFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_search" />
+</navigation>

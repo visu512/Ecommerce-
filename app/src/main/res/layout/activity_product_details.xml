@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.ProductDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_weight="0.92"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <!-- ImageSlider widget -->
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/imgSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:elevation="0dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="1500"
+                        app:iss_period="2500"
+                        app:iss_text_align="CENTER" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito"
+                        android:text="Product Name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito"
+                        android:text="Product Description"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <!-- Buttons at Bottom -->
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <Button
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pButton"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E49C32"
+            android:drawableStart="@drawable/cart"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nunito"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Add to Cart"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

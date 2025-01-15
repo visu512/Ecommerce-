@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1.2dp"
+    android:background="@color/white">
+
+    <!-- Card View -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="248dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardElevation="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:padding="4dp"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lap" />
+
+            </RelativeLayout>
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/pName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="MacBook Pro"
+                android:textColor="@color/black"
+                android:textSize="14.5sp"
+                android:textStyle="normal" />
+
+            <!-- Product Description -->
+            <TextView
+                android:id="@+id/pDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:fontFamily="@font/nunito"
+                android:maxLines="2"
+                android:text="Apple Laptop"
+                android:textColor="@color/black"
+                android:textSize="12.5sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/delivery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/free_delivery"
+                    android:textColor="#038308"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+            <!-- Price Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Selling Price -->
+                <TextView
+                    android:id="@+id/pSellingPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:text="₹499"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!-- MRP (Strikethrough) -->
+                <TextView
+                    android:id="@+id/pMRP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:paddingLeft="3dp"
+                    android:text="₹599"
+                    android:textColor="#808080"
+                    android:textSize="12.7sp" />
+
+                <!-- Discount Percentage -->
+                <TextView
+                    android:id="@+id/pDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2.5dp"
+                    android:text="25% Off"
+                    android:textColor="#038308"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <!-- Rating Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3.5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/baseline_star"
+                    android:tint="#EBC601"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:id="@+id/pRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="4.5"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/totalRatings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="(250 ratings)"
+                    android:textColor="#038308"
+                    android:textSize="12.5sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
